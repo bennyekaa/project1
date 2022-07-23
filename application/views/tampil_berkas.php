@@ -22,6 +22,7 @@
                         <td><?php echo $no++; ?></td>
                         <td><img src="data:<?php echo $row->tipe_berkas; ?>;base64,<?php echo $row->berkas; ?>"></td>
                         <td><?php echo $row->keterangan_berkas; ?></td>
+                        <td><a href="<?php echo base_url('index.php/upload/tampilGambar/'); ?><?= $row->kd_berkas; ?>">View</a></td>
                     </tr>
                     <?php
                 }
